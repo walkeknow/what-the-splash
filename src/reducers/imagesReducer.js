@@ -4,7 +4,7 @@ const imagesReducer = (state = [], action) => {
   if (action.type === IMAGES.LOAD_SUCCESS) {
     return [
       ...state,
-      ...action.images
+      ...action.payload.images
     ]
   }
   return state
